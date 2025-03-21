@@ -5,8 +5,9 @@
             document.getElementById('current-time').textContent = timeString;
             
             // Update current date
+            let time = new Date(2025, 2, 28);  
             const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            const dateString = now.toLocaleDateString(undefined, options);
+            const dateString = time.toLocaleDateString(undefined, options);
             document.getElementById('event-date').textContent = dateString;
         }
         
